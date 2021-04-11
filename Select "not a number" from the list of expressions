@@ -1,0 +1,14 @@
+Task
+Select "not a number" from the list of expressions
+Write a function pushElement that takes an array arr and value as arguments, adds value to the end of the array, and returns the resulting array.
+Example:
+• the pushElement ([1, 2, 3], "a") function must return [1, 2, 3, "a"];
+• the pushElement ([0, 0, 0], 5) function must return [0, 0, 0, 5];
+• the pushElement ([], 1) function must return [1].
+
+
+Solution
+function pushElement (arr, value) {
+  arr.push (value);
+   return arr;
+}
