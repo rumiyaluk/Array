@@ -1,0 +1,14 @@
+Task
+Create an array of n identical elements m
+Write a createArray function that takes a number n and a value m as arguments and returns an array containing n elements equal to m.
+Example:
+• the createArray (5, 1) function must return [1, 1, 1, 1, 1].
+• the createArray (3, 10) function must return [10, 10, 10].
+• the createArray (4, 'a') function must return ['a', 'a', 'a', 'a'].
+
+Solution
+function createArray (n, m) {
+  let arr = [];
+     for (let i = 0; i <n; i ++) {
+     arr.push (m);
+     }
