@@ -1,0 +1,17 @@
+Task
+Create an array of n even numbers
+Write a function createEvenArray that takes a non-negative integer n as an argument and returns an array containing n even numbers.
+Example:
+• the createEvenArray (5) function must return [0, 2, 4, 6, 8];
+• the createEvenArray (2) function must return [0, 2];
+• the createEvenArray (1) function must return [0];
+• the createEvenArray (0) function must return [].
+
+Solution
+function createEvenArray (n) {
+let arr = [];
+   for (let i = 0; i <(n * 2); i ++) {
+     if (i% 2 === 0) arr.push (i);
+   }
+     return arr;
+}
