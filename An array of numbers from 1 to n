@@ -1,0 +1,18 @@
+Task
+An array of numbers from 1 to n
+Write a createArray function that takes a number n as an argument and returns an array containing natural numbers from 1 to a given number n: [1, 2, 3, ...., n].
+If n = 0, return an empty array [].
+Example:
+• the createArray (3) function must return [1, 2, 3];
+• the createArray (7) function must return [1, 2, 3, 4, 5, 6, 7];
+• the createArray (1) function must return [1];
+• the createArray (0) function must return [].
+
+Solution
+function createArray (n) {
+ let arr = [];
+  for (let i = 1; i <= n; i ++) {
+  arr.push (i);
+ }
+ return arr;
+}
