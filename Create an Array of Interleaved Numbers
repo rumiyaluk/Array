@@ -1,0 +1,20 @@
+Task
+Create an Array of Interleaved Numbers
+Write an alternationArray function that takes a non-negative integer n as an argument and returns an array containing numbers from 0 to n, where even numbers are positive and odd numbers are negative.
+Example:
+• the alternationArray (5) function must return [0, -1, 2, -3, 4, -5];
+• the alternationArray (2) function must return [0, -1, 2];
+• the alternationArray (1) function must return [0, -1];
+• the alternationArray (0) function must return [0].
+
+Solution
+function alternationArray (n) {
+ let arr = [];
+     for (let i = 0; i <= n; i ++) {
+     if (i% 2! == 0)
+     arr.push (-i);
+      else
+     arr.push (i);
+     }
+     return arr;
+}
