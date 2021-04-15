@@ -1,0 +1,17 @@
+Task
+Create an array of negative numbers
+Write a createNegativeArray function that takes a non-negative integer n as an argument and returns an array containing n negative numbers between -1 and -n.
+Example:
+• the createNegativeArray (5) function must return [-1, -2, -3, -4, -5];
+• the createNegativeArray (2) function must return [-1, -2];
+• the createNegativeArray (1) function must return [-1];
+• the createNegativeArray (0) function must return []
+
+Solution
+function createNegativeArray (n) {
+ let arr = [];
+  for (let i = 1; i <= n; i ++) {
+ arr.push (-i);
+ }
+ return arr;
+}
