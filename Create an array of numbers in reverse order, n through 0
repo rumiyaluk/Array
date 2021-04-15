@@ -1,0 +1,17 @@
+Task
+Create an array of numbers in reverse order, n through 0.
+Write a function createReverseArray that takes a non-negative integer n as an argument and returns an array containing integers from n to 0: [n, n-1, ..., 3, 2, 1, 0].
+Example:
+• the createReverseArray (5) function must return [5, 4, 3, 2, 1, 0];
+• the createReverseArray (2) function must return [2, 1, 0];
+• the createReverseArray (1) function must return [1, 0];
+• the createReverseArray (0) function must return [0].
+
+Solution
+function createReverseArray (n) {
+ let arr = [];
+  for (let i = n; i> = 0; i -) {
+ arr.push (i);
+ }
+ return arr;
+}
