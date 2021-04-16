@@ -1,0 +1,14 @@
+Task
+Create an array of integers from n to m
+Write a function createArrayFromNToM that takes non-negative integers n, m (n <m) as arguments and returns an array containing the numbers n through m. All tests are guaranteed that n <m, you do not need to check this condition in the function.
+Example:
+• the createArrayFromNToM (5, 10) function must return [5, 6, 7, 8, 9, 10].
+
+Solution
+function createArrayFromNToM (n, m) {
+ let arr = [];
+ for (let i = n; i <= m; i ++) {
+ arr.push (i);
+ }
+ return arr;
+}
