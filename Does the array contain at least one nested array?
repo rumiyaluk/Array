@@ -1,0 +1,18 @@
+Task
+Does the array contain at least one nested array?
+Write the isArrayContainsArray function that takes the arr array as an argument and returns true if at least one of the array elements is an array, and false otherwise.
+Example:
+• the isArrayContainsArray (['a ", [1], 123]) function must return true;
+• the isArrayContainsArray ([[], true, false, [12]]) function must return true;
+• the isArrayContainsArray ([[1], [1, 2], [1,2,3]]) function must return true;
+• the isArrayContainsArray (["a", "b", "c"]) function must return false;
+• the isArrayContainsArray ([{}, 12, "qwerty", null, undefined]) function must return false.
+
+
+Solution
+ function isArrayContainsArray (arr) {
+  for (let i = 0; i <arr.length; i ++) {
+   if (Array.isArray (arr [i])) return true;
+   }
+  return false;
+ }
