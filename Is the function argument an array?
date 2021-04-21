@@ -1,0 +1,19 @@
+
+Task
+Is the function argument an array?
+Write a function isArgArray that takes value as an argument and returns true if value is an array and false otherwise. Use the Array.isArray () method when solving.
+Example:
+• the isArgArray (123) function must return false;
+• the isArgArray ("Welcome") function must return false;
+• the isArgArray (true) function must return false;
+• the isArgArray ([]) function must return true;
+• the isArgArray ({name: 'Alice'}) function must return false;
+• the isArgArray (null) function must return false;
+• the isArgArray (undefined) function must return false;
+• the isArgArray ([1,2,3,4]) function must return true.
+
+Solution
+function isArgArray (value) {
+ if (Array.isArray (value)) return true;
+  return false;
+}
