@@ -1,0 +1,15 @@
+Task
+Is at least one of the two function arguments an array?
+Write a function isArrayInArg that takes two values value1 and value2 as arguments and returns true if at least one of the arguments is an array, and false otherwise.
+Example:
+• the isArrayInArg (12, [1]) function must return true;
+• the isArrayInArg ([], "Welcome") function must return true;
+• the isArrayInArg ([1], [0]) function must return true;
+• the isArrayInArg (15, 0) function must return false;
+• the isArrayInArg ({name: 'Alice'}, "Bob") function must return false.
+
+Solution
+function isArrayInArg (value1, value2) {
+ if (Array.isArray (value1) || Array.isArray (value2)) return true;
+  return false;
+}
