@@ -1,0 +1,20 @@
+Task
+Number of words with a length of 5 characters
+Write a function countOfWords that takes an array of names as an argument and returns the number of names that are 5 characters long.
+Example:
+• the countOfWords (['Noah', 'Liam', 'William', 'Mason', 'James']) function must return 2.
+• the countOfWords (["Ann", "Alice"]) function must return 1.
+• the countOfWords (["Bob"]) function must return 0.
+• the countOfWords ([]) function must return 0.
+
+Solution
+function countOfWords (names) {
+ let count = 0;
+ for (let i = 0; i <names.length; i ++) {
+  if (names [i] .length === 5) {
+  count ++;
+  }
+  }
+  return count;
+return 0;
+}
