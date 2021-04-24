@@ -1,0 +1,21 @@
+Task
+Does the array have at least one element equal to the sum of its neighbors on the left and right?
+Write a function isElementInArray that takes an array arr as an argument and, if the array contains at least one element equal to the sum of its neighbors on the left and right, finds the first such element and returns a string like this:
+• "true: it is <element>", where <element> is the element value.
+• or false otherwise.
+Example:
+• the isElementInArray ([1, 5, 4, 1, 0, -1]) function must return "true: it is 5" (the first such element: 5 = 1 + 4);
+• the isElementInArray ([2, 9, 0, 0]) function must return false;
+• the isElementInArray ([1, 2, 3, 1]) function must return "true: it is 3" (3 = 2 + 1);
+• the isElementInArray ([]) function must return false.
+
+Solution
+function isElementInArray (arr) {
+ let sum = 0;
+ for (let i = 0; i <arr.length; i ++) {
+   sum = arr [i - 1] + arr [i + 1]
+   if (sum === arr [i])
+   return `$ {true}: it is $ {sum}`;
+   }
+   return false;
+}
