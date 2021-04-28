@@ -1,0 +1,22 @@
+Task
+Identical elements in an array
+Write a function equalElementsInArray that takes an array of numbers arr as an argument and determines 
+if the array contains the same elements, and if so, returns them as an array [element, element]. 
+If there are several such pairs, return the first one. If there are no identical elements in the array, 
+return the message "All elements are different". If the original array is empty, return an empty array.
+Example:
+• function equalElementsInArray ([2, 1, 5, 9, 4, 5, 6]) must return [5, 5].
+• function equalElementsInArray ([2, 1, 5, 9, 6, 4, 1, 5, 6]) must return [1, 1].
+• the equalElementsInArray ([1, 2, 3]) function must return "All elements are different".
+A little hint: we loop through the array for i from 0 to <arr.length-1 (i.e. to the penultimate element), 
+and for each element in the rest of the array, we look for an element equal to it (here you need to use a nested loop) ... As soon as such a match is found, we return this pair.
+
+Solution
+function equalElementsInArray (arr) {
+  if (arr.length === 0) return [];
+   for (let i = 0; i <arr.length; i ++)
+    if (arr.indexOf (arr [i])! == arr.lastIndexOf (arr [i])) {
+      return [arr [i], arr [i]];
+    }
+    return "All elements are different";
+}
