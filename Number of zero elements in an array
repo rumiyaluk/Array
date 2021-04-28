@@ -1,0 +1,17 @@
+Task
+Number of zero elements in an array
+Write a function countZeros that takes an array arr as an argument and returns the number of elements in the array equal to zero.
+Example:
+• the countZeros ([0, 2, -7, 8, 0]) function must return 2;
+• the countZeros ([0, -1, -2]) function must return 1;
+• the countZeros ([]) function must return 0.
+
+Solution
+function countZeros (arr) {
+  let zeros = 0;
+  for (let i = 0; i <arr.length; i ++) {
+     if (arr [i] === 0)
+    zeros ++
+  }
+    return zeros;
+}
