@@ -1,0 +1,15 @@
+Task
+New prices for goods
+The array stores product prices. Prices have doubled. Transform the array so that the elements of the array contain the new prices.
+Write a changeArray function that takes an array of prices as an argument and returns an array that stores the new prices.
+Example:
+• the changeArray ([20, 26, 12]) function should return [40, 52, 24].
+
+Solution
+function changeArray (prices) {
+  let arr = [];
+  for (let i = 0; i <prices.length; i ++) {
+    arr.push (prices [i] * 2);
+  }
+ return arr;
+}
