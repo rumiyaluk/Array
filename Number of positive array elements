@@ -1,0 +1,17 @@
+Task
+Number of positive array elements
+Write a function countPositive that takes an array arr as an argument and returns the number of positive elements in the array.
+Example:
+• the countPositive ([10, 2, -3, 8]) function must return 3;
+• the countPositive ([0, -1, -2]) function must return 0;
+• the countPositive ([]) function must return 0.
+
+Solution
+function countPositive (arr) {
+  let count = 0;
+  for (let i = 0; i <arr.length; i ++) {
+      if (arr [i]> 0)
+    count ++;
+  }
+  return count;
+}
