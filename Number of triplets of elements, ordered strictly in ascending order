@@ -1,0 +1,18 @@
+Task
+Number of triplets of elements, ordered strictly in ascending order
+Write a function numberOfOrderedTriples that takes an array arr as an argument and returns the number of triplets of adjacent elements that are strictly in ascending order.
+Example:
+• function numberOfOrderedTriples ([1, 25, 3, 7, 15, 12]) must return 1 (there is only one such triple: 3, 7, 15)
+• function numberOfOrderedTriples ([1, 2, 3, 3, 15]) must return 1 (there is only one such triple: 1, 2, 3)
+• the numberOfOrderedTriples ([2, 32, 5]) function must return 0.
+• the numberOfOrderedTriples ([]) function must return 0.
+
+Solution
+function numberOfOrderedTriples (arr) {
+  let count = 0;
+  for (let i = 2; i <arr.length; i ++) {
+      if (arr [i - 2] <arr [i - 1] && arr [i - 1] <arr [i])
+        count ++;
+   }
+    return count;
+}
