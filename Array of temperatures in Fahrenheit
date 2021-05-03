@@ -1,0 +1,18 @@
+Task
+Array of temperatures in Fahrenheit
+Write a function fahrenheit that takes two integers t1 and t2 (t1 <t2 is the start and end temperature in degrees Celsius) and returns an array of Fahrenheit temperatures for a given temperature range. Temperatures in degrees Celsius and degrees Fahrenheit are related by the formula: tf = tc * (9/5) + 32 The calculated values ​​are rounded to one decimal place.
+ 
+Examples:
+• function fahrenheit (20, 25) must return [68, 69.8, 71.6, 73.4, 75.2, 77];
+• function fahrenheit (1, 10) must return [33.8, 35.6, 37.4, 39.2, 41, 42.8, 44.6, 46.4, 48.2, 50];
+
+Solution
+function fahrenheit (t1, t2) {
+let arr = [];
+   let f1 = + (t1 * (9/5) + 32) .toFixed (1);
+   let f2 = + (t2 * (9/5) + 32) .toFixed (1);
+     for (let i = f1; i <= f2; i + = 1.8) {
+     arr.push (+ i.toFixed (1));
+     }
+    return arr;
+}
