@@ -1,0 +1,17 @@
+Task
+The first element that is larger than its right-hand neighbor
+Write a function firstBigger that takes a numeric array arr as an argument and returns the first element of the array that is larger than its right-hand neighbor, or undefined if the array is in ascending order.
+Examples:
+• the firstBigger ([0, 8, 4, 1]) function must return 8 (since 8> 4 is the first element of the array, which is greater than the element following it);
+• the firstBigger ([1, 2, 3, 5, 5, 15]) function must return undefined (since the elements are in ascending order, the array does not contain an element that is greater than the element following it);
+• the firstBigger ([]) function must return undefined.
+
+Solution
+function firstBigger (arr) {
+  for (let i = 0; i <arr.length; i ++) {
+   if (arr [i]> arr [i + 1]) {
+   return arr [i];
+  }
+  }
+return undefined;
+}
