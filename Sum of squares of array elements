@@ -1,0 +1,17 @@
+Task
+Sum of squares of array elements
+Write a function sumOfSquares that takes the arr array as an argument and returns the sum of the squares of the array's elements.
+Use a loop in your solution. Array methods are not allowed.
+Example:
+• function sumOfSquares ([1, 2, 3]) should return 14, because 1 ** 2 + 2 ** 2 + 3 ** 2 = 1 + 4 + 9 = 14
+• function sumOfSquares ([10]) must return 100;
+• the sumOfSquares ([]) function must return 0.
+
+Solution
+function sumOfSquares (arr) {
+let sum = 0;
+for (let i = 0; i <arr.length; i ++) {
+sum = sum + arr [i] ** 2;
+}
+return sum;
+}
