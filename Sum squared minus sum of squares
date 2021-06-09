@@ -1,0 +1,26 @@
+Task
+Sum squared minus sum of squares
+Write a function squares that takes the array arr as an argument and returns the difference between the square of the sum of the elements and the sum of the squares of the elements in the array.
+For example, given an array [2, 1, 4].
+The square of the sum of the elements: (2 + 1 + 4) ** 2 = 7 ** 2 = 49
+Sum of squares of elements: 2 ** 2 + 1 ** 2 + 4 ** 2 = 4 + 1 = 16 = 21
+Result: 49 - 21 = 28
+Use a loop in your solution. Array methods are not allowed.
+Examples:
+• function squares ([2, 1, 4]) should return 28;
+• function squares ([1, 7]) should return 14;
+• function squares ([10]) must return 0;
+• the function squares ([]) must return 0.
+
+Solution
+function squares (arr) {
+ let squ2 = 0;
+ for (let i = 0; i <arr.length; i ++) {
+   squ2 = squ2 + arr [i];
+   }
+ let squ1 = 0;
+ for (let i = 0; i <arr.length; i ++) {
+   squ1 = squ1 + arr [i] ** 2;
+   }
+return Math.pow (squ2,2) - squ1;
+}
