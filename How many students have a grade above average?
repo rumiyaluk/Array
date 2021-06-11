@@ -1,0 +1,25 @@
+Task
+How many students have a grade above average?
+The array contains the marks of the students in the class. How many students have a higher than average score? (That is, how many students have a score that is higher than the arithmetic mean of the array elements).
+Write a function aboveAverageScore that takes an array of marks arr as an argument and returns the number of students who have an above average score. In all tests, the array is not empty.
+Use a loop in your solution. Array methods are not allowed.
+Example:
+• the function aboveAverageScore ([3, 4, 5]) should return 1 (the average score is 4, and only one number 5> 4);
+• the function aboveAverageScore ([4, 5]) must return 1;
+• the function aboveAverageScore ([2, 3, 5]) must return 1;
+• the function aboveAverageScore ([2, 2, 2]) must return 0.
+
+Solution
+function aboveAverageScore (arr) {
+let sum = 0;
+  for (let i = 0; i <arr.length; i ++) {
+   sum = sum + arr [i];
+  }
+   let average = sum / arr.length;
+   let above = 0;
+     for (let i = 0; i <arr.length; i ++) {
+       if (arr [i]> average)
+       above ++
+     }
+   return above;
+   }
