@@ -1,0 +1,18 @@
+Task
+Arithmetic mean of array elements
+Write an average function that takes an array arr as an argument and returns the arithmetic mean of the array's elements. Round the result to two decimal places. In all tests, the array is not empty.
+Use a loop in your solution. Array methods are not allowed.
+Example:
+• the average function ([1, 2, 3]) must return 2;
+• the function average ([4, 5]) should return 4.5;
+• the average function ([2, 3, 5]) should return 3.33;
+• the average function ([2, 2, 2]) must return 2.
+
+Solution
+function average (arr) {
+ пусть сумма = 0;
+  for (let el of arr) {
+    сумма + = эл;
+  }
+  return + (сумма / длина прибл.) .toFixed (2);
+}
