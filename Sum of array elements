@@ -1,0 +1,17 @@
+Task
+Sum of array elements
+Write a function sumOfElements that takes the arr array as an argument and returns the sum of the array's elements.
+Use a loop in your solution. Array methods are not allowed.
+Example:
+• function sumOfElements ([1, 2, 3]) must return 6;
+• function sumOfElements ([15]) must return 15;
+• the sumOfElements ([]) function must return 0
+
+Solution
+function sumOfElements (arr) {
+let sum = 0;
+for (let i = 0; i <arr.length; i ++) {
+   sum = sum + arr [i];
+}
+return sum;
+}
