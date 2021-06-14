@@ -1,0 +1,21 @@
+Task
+Maximum array element
+Write a function maxInArray that takes arr as an argument and returns the maximum element in the array.
+Use a loop in your solution. The use of the Math.max () method is not permitted.
+Example:
+• function maxInArray ([3, 4, 8, 1]) must return 8;
+• function maxInArray ([11, 12) must return 12;
+• function maxInArray ([1, 1]) must return 1;
+• the maxInArray ([]) function must return undefined.
+
+Solution
+function maxInArray (arr) {
+   let max = arr [0];
+   if (arr.length === 0) return undefined;
+     for (let i = 1; i <arr.length; i ++) {
+       if (arr [i]> max) {
+       max = arr [i];
+       }
+     }
+     return max;
+}
