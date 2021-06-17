@@ -1,0 +1,24 @@
+Task
+Who collected the most mushrooms?
+The children collected mushrooms, then counted them and the data obtained were entered into an array. The array stores information about how many mushrooms each of the guys collected. The data is represented as an array [name, number] (for example, ["Alice", 19]). Determine which of the guys collected the most mushrooms.
+If several children have collected the same amount of mushrooms, return the name of the first one.
+Write a function largestNumberOfMushrooms that takes an array arr containing the names of children and the number of mushrooms they collected, and returns the name of the child who collected the most mushrooms and the number of mushrooms they collected as a string: "Name: number".
+In all tests, the input array is not empty.
+Use a loop in your solution. The use of the Math.max () method is not permitted.
+Example:
+• the largestNumberOfMushrooms ([["Maria", 15], ["Anna", 21], ["Ivan", 32]]) function must return "Ivan: 32";
+• the largestNumberOfMushrooms ([["Elena", 10], ["Nick", 10]]) function must return "Elena: 10";
+• the largestNumberOfMushrooms ([["Amelia", 12]]) function should return "Amelia: 12".
+
+Solution
+function largestNumberOfMushrooms (arr) {
+ let numbers = arr [0] [1];
+  let name = arr [0] [0];
+  for (let i = 0; i <arr.length; i ++) {
+    if (arr [i] [1]> numbers) {
+    numbers = arr [i] [1];
+    name = arr [i] [0];
+    }
+  }
+  return `$ {name}: $ {numbers}`;
+}
