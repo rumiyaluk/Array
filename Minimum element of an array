@@ -1,0 +1,21 @@
+Task
+Minimum element of an array
+Write a minInArray function that takes arr as an argument and returns the minimum element of the array.
+Use a loop in your solution. The use of the Math.min () method is not permitted.
+Example:
+• the minInArray ([3, 4, 8, 1]) function must return 1;
+• the minInArray ([11, 12) function must return 11;
+• the minInArray ([1, 1]) function must return 1;
+• the minInArray ([]) function must return undefined.
+
+Solution
+function minInArray (arr) {
+  let min = arr [0];
+  if (arr.length === 0) return undefined;
+  for (let i = 0; i <arr.length; i ++) {
+   if (arr [i] <min) {
+    min = arr [i];
+    }
+    }
+    return min;
+    }
