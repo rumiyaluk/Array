@@ -1,0 +1,21 @@
+Task
+Maximum element modulus
+Write a function maxAbsValue that takes an array arr as an argument and returns the element that has the maximum absolute value (modulus). If the values ​​are equal, the first in the list is returned.
+Use a loop in your solution. The use of the Math.max () method is not permitted.
+Example:
+• function maxAbsValue ([3, 7, -8, 1]) must return -8;
+• function maxAbsValue ([- 11, 6, 12) must return 12;
+• function maxAbsValue ([1, -2, 2]) must return -2;
+• function maxAbsValue ([]) must return undefined
+
+
+Solution
+function maxAbsValue (arr) {
+ let max = arr [0];
+  if (arr.length === 0) return undefined;
+  for (let i = 0; i <arr.length; i ++) {
+    if (Math.abs (arr [i])> Math.abs (max))
+      max = arr [i];
+  }
+  return max;
+}
