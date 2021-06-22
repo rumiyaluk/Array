@@ -1,0 +1,18 @@
+Task
+Minimum odd element of an array
+Write a minOdd function that takes an array arr as an argument and returns the minimum odd element of the array. If the array contains no odd elements or the array is empty, return undefined.
+Use a loop in your solution. The use of the Math.min () method is not permitted.
+Example:
+• the minOdd ([2, 3, 4, 8, 17, 18]) function must return 3;
+• the minOdd ([11, 7, 4, 12) function must return 7;
+• the minOdd ([3, 3]) function must return 3;
+• the minOdd ([2, 4]) function must return undefined;
+• the minOdd ([]) function must return undefined.
+Solution
+function minOdd (arr) {
+arr.sort ((a, b) => a - b);
+  for (let i = 0; i <arr.length; i ++) {
+    if (arr [i]% 2! == 0)
+    return arr [i];
+  }
+}
