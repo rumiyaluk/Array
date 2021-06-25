@@ -1,0 +1,18 @@
+Task
+Maximum even element of an array
+Write a function maxEven that takes an array arr as an argument and returns the maximum even element of the array. If the array contains no even elements or the array is empty, return undefined.
+Use a loop in your solution. The use of the Math.max () method is not permitted.
+Example:
+• function maxEven ([3, 4, 8, 17]) must return 8;
+• function maxEven ([11, 12, 3, 35) must return 12;
+• function maxEven ([1, 5]) must return undefined;
+• function maxEven ([]) must return undefined
+
+Solution
+function maxEven (arr) {
+ arr.sort ((x, y) => y - x);
+  for (var i = 0; i <arr.length; i ++) {
+    if (arr [i]% 2 == 0)
+      return arr [i];
+}
+}
