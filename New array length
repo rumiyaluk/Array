@@ -1,0 +1,13 @@
+Task
+New array length
+Write a function addValue that takes an array arr and value as arguments, adds value to the end of the array, and returns the new length of the array. The length property cannot be used in this task.
+Example:
+• the addValue ([1, 2, 3], 10) function must return 4;
+• function addValue ([1, -1, 14, 0], "a") must return 5;
+• the addValue ([], 10) function must return 1.
+
+Solution
+function addValue (arr, value) {
+  let res = arr.push (value);
+  return res;
+}
