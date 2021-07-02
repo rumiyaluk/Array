@@ -1,0 +1,21 @@
+Split the array into an array of numbers and an array of strings
+An array containing numbers and strings is given. Get two arrays: an array of numbers and an array of strings from the values ​​of the original array.
+Write a separateNumsAndStrings function that takes a mixed array arr as an argument, returns an array containing an array of numbers and an array of strings as: [[array of numbers], [array of strings]]
+Example:
+• function separateNumsAndStrings ([1, 2, "a", 3, "b"]) must return [[1, 2, 3], ["a", "b"]];
+• the separateNumsAndStrings ([1, 1, 1]) function must return [[1, 1, 1], []];
+• function separateNumsAndStrings (["a", "b", "c"]) must return [[], ["a", "b", "c"]];
+• the separateNumsAndStrings ([]) function must return [[], []].
+
+Solution
+function separateNumsAndStrings (arr) {
+ let num = [];
+  let str = [];
+  for (let el of arr) {
+   if (typeof el == 'number') {
+   num.push (el);}
+   else if (typeof el == 'string') {
+   str.push (el);}
+   }
+   return [num, str];
+}
