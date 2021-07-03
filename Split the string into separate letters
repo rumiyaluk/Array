@@ -1,0 +1,12 @@
+Task
+Split the string into separate letters
+Write a splitString function that takes str as an argument and returns an array containing the letters of that string. Use a row loop and push method in your solution. The split () method is not allowed in this task.
+Example:
+• the splitString ("Monkey") function must return ["M", "o", "n", "k", "e", "y"];
+• the splitString ([]) function must return [].
+
+Solution
+function splitString (str) {
+  let arr = Array.from (str);
+  return arr;
+}
