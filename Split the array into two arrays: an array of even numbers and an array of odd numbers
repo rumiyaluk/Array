@@ -1,0 +1,23 @@
+Task
+Split the array into two arrays: an array of even numbers and an array of odd numbers
+An array containing numbers is given. Get two arrays: an array of even numbers and an array of odd numbers.
+Write a separateEvenAndOdd function that takes a numeric array arr as an argument, returns an array containing an array of even numbers and an array of odd numbers in the form: [[array of even numbers], [array of odd numbers]].
+Example:
+• the separateEvenAndOdd ([- 2, -3, 7, 4) function must return [[-2, 4], [- 3, 7]];
+• the separateEvenAndOdd ([4, 2]) function must return [[4, 2], []];
+• the separateEvenAndOdd ([]) function must return [[], []].
+Solution
+function separateEvenAndOdd (arr) {
+ let even = [];
+  let odd = [];
+  for (let el of arr) {
+    if (el% 2 == 0) {
+    even.push (el);
+    }
+    if (el% 2! == 0) {
+    odd.push (el);
+    }
+  }
+    return [even, odd];
+} 
+Больше информации об этом исходном текстеЧтобы получить дополнительную информацию, введите исходный текст
