@@ -1,0 +1,25 @@
+Task
+Split the array into two arrays: an array of positive numbers and an array of negative numbers
+An array containing numbers is given. Get two arrays: an array of positive numbers and an array of negative numbers.
+Write a separatePosAndNeg function that takes a numeric array arr as an argument, returns an array containing an array of positive numbers and an array of negative numbers as:
+[[array of positive numbers], [array of negative numbers]].
+An element equal to zero should not be included in any array.
+Example:
+• the separatePosAndNeg ([- 2, 3, 7, -4) function must return [[3, 7], [- 2, -4]];
+• the separatePosAndNeg ([1, 2]) function must return [[1, 2], []];
+• the separatePosAndNeg ([]) function must return [[], []].
+
+Solution
+function separatePosAndNeg (arr) {
+  let pos = [];
+  let neg = [];
+  for (let el of arr) {
+    if (el> 0) {
+    pos.push (el);
+    }
+    else if (el <0) {
+    neg.push (el);
+    }
+  }
+    return [pos, neg];
+}
