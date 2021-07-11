@@ -1,0 +1,20 @@
+Task
+An array of digits of a number.
+A positive integer is given. Get an array of its digits.
+Write a function called arrayOfDigits that takes n as an argument and returns an array of its digits. The use of methods is prohibited. Use a do while loop in your solution.
+Examples:
+• the arrayOfDigits (123456) function must return [1, 2, 3, 4, 5, 6];
+• the arrayOfDigits (1000) function must return [1,0,0,0];
+• the arrayOfDigits (1) function must return [1].
+• the arrayOfDigits (0) function must return [0]
+
+Solution
+function arrayOfDigits (n) {
+  let str = n.toString ();
+   let arr = [];
+     do {
+     arr.push (+ str.slice (0,1));
+     str = str.substring (1);
+     } while (str.length> 0);
+   return arr;
+}
