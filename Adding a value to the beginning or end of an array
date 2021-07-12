@@ -1,0 +1,19 @@
+Task
+Adding a value to the beginning or end of an array
+Write a function addValue that takes an array arr and value as arguments, adds value to the end of the array if value is a number, or to the beginning of the array if value is a string, then returns the resulting array.
+Example:
+• the addValue ([1, 2, 3], 10) function must return [1, 2, 3, 10];
+• the addValue ([1, 1, 1], "a") function must return ["a", 1, 1, 1];
+• the addValue ([1], 10) function must return [1, 10];
+• the addValue ([1], "b") function must return ["b", 1];
+• the addValue ([], 0) function must return [0].
+
+Solution
+function addValue (arr, value) {
+ let i = value;
+    if (typeof value === "number")
+    arr.push (i);
+    if (typeof value === "string")
+    arr.unshift (i);
+  return arr;
+}
