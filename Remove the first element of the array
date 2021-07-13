@@ -1,0 +1,13 @@
+Task
+Remove the first element of the array
+Write a function deleteFirstElement that takes the arr array as an argument, removes the first element of the array, and returns the resulting array.
+Example:
+• the deleteFirstElement ([10, 1, 2, 3]) function must return [1, 2, 3];
+• the deleteFirstElement ([1]) function must return [];
+• the deleteFirstElement ([]) function must return [].
+
+Solution
+function deleteFirstElement (arr) {
+   let del = arr.shift ();
+   return arr;
+}
