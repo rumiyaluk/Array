@@ -1,0 +1,19 @@
+Task
+Remove five elements from the beginning of the array
+Write a function deleteFiveElements that takes an arr array as an argument, removes the first five elements of the array, and returns the resulting array.
+Example:
+• function deleteFiveElements ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) must return [6, 7, 8, 9, 10];
+• function deleteFiveElements ([1, 2, 3, 4, 5, 6]) must return [6];
+• function deleteFiveElements ([1, 2, 3, 4, 5]) must return [];
+• the deleteFiveElements ([1, 2, 3]) function must return [];
+• the deleteFiveElements ([]) function must return [].
+
+
+Solution
+
+function deleteFiveElements (arr) {
+for (let i = 0; i <5; i ++) {
+   arr.shift ();
+   }
+   return arr;
+}
