@@ -1,0 +1,25 @@
+Task
+Remove all non-numeric elements at the beginning of the array
+An array is given, at the beginning of which there is a certain number of non-numeric elements, after which there may be numbers. Write a function deleteNotNumbers that takes a mixed array arr as an argument, removes all non-numeric array elements up to the first number, and returns the resulting array.
+Example:
+• function deleteNotNumbers (['a', 'b', 1, 2, 3]) must return [1, 2, 3];
+• the deleteNotNumbers function ([true, false, "a", 1, 2, 3]) must return [1, 2, 3];
+• function deleteNotNumbers ([1, 2, 3]) must return [1, 2, 3];
+• function deleteNotNumbers (['a', 'b']) must return [];
+• function deleteNotNumbers (['a', 'b', 2, 'a']) must return [2, 'a'];
+• the deleteNotNumbers ([]) function must return [].
+
+Solution
+function deleteNotNumbers (arr) {
+let notNumber = 0;
+for (let i = 0; i <arr.length; i ++) {
+  if (typeof arr [i]! == "number") {
+  notNumber ++;
+  }
+  else break;
+  }
+  for (let i = 0; i <notNumber; i ++) {
+  arr.shift ();
+  }
+  return arr;
+}
