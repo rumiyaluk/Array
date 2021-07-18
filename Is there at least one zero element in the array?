@@ -1,0 +1,12 @@
+Task
+Is there at least one zero element in the array?
+Write a function includeZero that takes the arr array as an argument and returns true if the array contains at least one element equal to 0, and false otherwise.
+Example:
+• the function includeZero ([1, 10, 2, -3, 8]) must return false;
+• the function includeZero ([0, 1, 2]) must return true;
+• the includeZero ([]) function must return false.
+
+Solution
+function includeZero (arr) {
+return arr.includes (0);
+}
