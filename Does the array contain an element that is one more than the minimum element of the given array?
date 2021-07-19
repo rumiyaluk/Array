@@ -1,0 +1,13 @@
+Task
+Does the array contain an element that is one more than the minimum element of the given array?
+Write a function includeGreaterThanMin that takes a non-empty arr array as an argument and returns true if the array contains an element that is one more than the minimum element, and false otherwise.
+Example:
+• the function includeGreaterThanMin ([1, 3, 4, 5]) must return false, since the minimum element is 1 and the array does not contain 2;
+• the function includeGreaterThanMin ([0, 1, 2, 3]) must return true, since the minimum element is 0 and the array contains 1;
+• the function includeGreaterThanMin ([9, -2, 10, -1, 8]) must return true, since the minimum element is -2 and the array contains -1.
+
+Solution
+function includeGreaterThanMin (arr) {
+let a = Math.min (... arr);
+return arr.includes (a + 1);
+}
