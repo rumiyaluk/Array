@@ -1,0 +1,17 @@
+Task
+Does the array contain the first letter of the given word?
+Write an includesFirstLetter function that takes an array of letters arr and the word word as arguments, and returns true if the array contains the first letter of the given word, and false otherwise.
+Example:
+• the includesFirstLetter (['a', 'b', 'c'], 'banana') function must return true, because the array contains b - the first letter of the word banana;
+• the includesFirstLetter (['c', 'd', 'q', 'a'], 'cat') function must return true, because the array contains c - the first letter of the word cat;
+• the includesFirstLetter (['f', 't', 'z'], 'apple') function must return false, since the array does not contain the letter a.
+
+Solution
+function includesFirstLetter (arr, word) {
+for (let i in arr) {
+    if (arr [i] === word [0]) {
+      return true;
+    }
+  }
+  return false;
+}
