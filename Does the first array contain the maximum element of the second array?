@@ -1,0 +1,17 @@
+Task
+Does the first array contain the maximum element of the second array?
+Write a function includesOtherMax that takes two numeric arrays arr1 and arr2 as arguments, and returns true if arr1 contains the maximum element in arr2, and false otherwise.
+Example:
+• the function includesOtherMax ([1, 7, 5], [3, 4, 5]) must return true, because the first array contains 5 - the maximum element of the second array;
+• the function includesOtherMax ([9, 0, -5, 8], [1, 2, 3]) must return false, because the first array does not contain 3 - the maximum element of the second array.
+
+Solution
+function includesOtherMax(arr1, arr2){
+ let a = Math.max(...arr2);
+    for(let i in arr1) {
+      if(arr1[i] === a) {
+    return true;
+      }
+    }
+return false;
+}
