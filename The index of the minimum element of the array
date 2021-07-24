@@ -1,0 +1,18 @@
+Task
+The index of the minimum element of the array
+Write a function indexOfMin that takes a non-empty arr array as an argument and returns the index of the minimum element in the array. If the array contains multiple minimum elements, return the index of the first such element.
+Example:
+• the indexOfMin ([10, 3, 4, 3, 5]) function must return 1;
+• the indexOfMin ([0, 1, 2, 3]) function must return 0;
+• the indexOfMin ([5, 4, 6, 3]) function must return 3;
+• the indexOfMin ([2, 2, 2, 2]) function must return 0.
+
+Solution
+function indexOfMin (arr) {
+let min = 0;
+     for (let i = 1; i <arr.length; i ++) {
+       if (arr [i] <arr [min])
+       min = i;
+     }
+     return min;
+}
