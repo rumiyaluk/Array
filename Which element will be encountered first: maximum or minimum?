@@ -1,0 +1,20 @@
+Taak
+Which element will be encountered first: maximum or minimum?
+Write a function indexMaxMin that takes a non-empty arr array as an argument and returns the string "max" if the index of the first maximum element in the array is less than the index of the first minimum element in the array, and the string "min" otherwise. If all elements in the array are equal, then return undefined.
+Example:
+• the function indexMaxMin ([1, 10, 2, -3, 8]) must return "max", since the maximum element of the array (10) is to the left of the minimum element (-3);
+• the indexMaxMin ([- 10, 1, 20]) function must return "min", since the minimum element of the array (-10) is to the left of the maximum element (20);
+• the function indexMaxMin ([2, 20, 20, 2]) must return "min";
+• the function indexMaxMin ([20, 1, 1, 20]) must return "max";
+• the function indexMaxMin ([1, 1]) must return undefined;
+• the indexMaxMin ([1]) function must return undefined.
+
+Solution
+function indexMaxMin (arr) {
+let maxIndex = arr.indexOf (Math.max (... arr));
+   let minIndex = arr.indexOf (Math.min (... arr));
+     if (maxIndex <minIndex) return "max";
+       if (maxIndex> minIndex) return "min";
+   else
+    return undefined;
+  }
