@@ -1,0 +1,14 @@
+Task
+Find the index of an element in an array
+Write a function indexOfValue that takes a non-empty arr array and value as arguments, and returns the index of the array element with value, or undefined if there is no such element.
+Example:
+• the indexOfValue ([1, 3, 6, 2, 6], 6) function must return 2;
+• the function indexOfValue ([0, 1, 2], 5) must return undefined;
+• the indexOfValue ([4, 1, 1, 2], 1) function must return 1.
+
+Solution
+function indexOfValue (arr, value) {
+let x = arr.indexOf (value);
+   if (x <0) return undefined;
+   return x;
+}
