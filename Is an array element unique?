@@ -1,0 +1,13 @@
+Task
+Is an array element unique?
+Write a uniqueElement function that takes a non-empty arr array and value as arguments, and returns true if the element with value is unique (that is, it occurs only once in the array), and false otherwise.
+Example:
+• the uniqueElement ([10, 3, 4, 3, 5], 3) function must return false;
+• the uniqueElement ([10, 11, 12, 13], 11) function must return true;
+• the uniqueElement ([10, 12, 12, 12], 10) function must return true;
+• the uniqueElement ([5, 4, 4, 4, 3], 4) function must return false.
+
+Solution
+function uniqueElement (arr, value) {
+return arr.indexOf (value) === arr.lastIndexOf (value);
+}
