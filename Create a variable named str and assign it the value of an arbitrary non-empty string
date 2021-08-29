@@ -1,0 +1,9 @@
+Task
+Create a variable named str and assign it the value of an arbitrary non-empty string. 
+Create a variable firstSymbol and assign it the value of the first character of the string.
+Create a variable named isStartWithA and assign it the result of comparing the first character of the string with 'A',
+i.e. the variable isStartWithA will be true if the string starts with 'A' and false otherwise.
+ Solution
+const str = 'Anna';
+const firstSymbol = str [0];
+const isStartWithA = firstSymbol === 'A';
