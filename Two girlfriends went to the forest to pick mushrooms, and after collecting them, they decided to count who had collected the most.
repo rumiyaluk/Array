@@ -1,0 +1,14 @@
+Task
+Two girlfriends went to the forest to pick mushrooms, and after collecting them, they decided to count who had collected the most.
+The first friend counted 20 mushrooms in her basket, and the second 23.
+Create two variables firstCart and secondCart and assign them the corresponding values ​​20 and 23.
+Create a third variable trueOrFalse and check: is it true that the second friend picked more mushrooms?
+Let's give an example that is fundamentally similar to what needs to be done, but adapt it to the requirements of the task:
+const deckOfCardsForPoker = 52;
+const deckOfCardsForJass = 36;
+const trueOrFalse = deckOfCardsForPoker <deckOfCardsForJass; // false
+
+Solution
+const firstCart = 20;
+const secondCart = 23;
+const trueOrFalse = firstCart <secondCart;
